@@ -229,6 +229,10 @@ body {
     padding: 10px;
   }
 
+  .dashboard__footer {
+    margin-top: 0;
+  }
+
   .dashboard__content {
     padding: 10px;
   }
