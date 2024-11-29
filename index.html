@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="dashboard__sidebar">
+        <div class="dashboard__logo">
+          <i class="fa-solid fa-gear"></i> Dashboard
+          <span class="dashboard_logo_version">v.01</span>
+        </div>
+        <nav class="dashboard__nav">
+          <ul class="dashboard__menu">
+            <li class="dashboard__menu-item dashboard__menu-item--active">
+              <i class="fas fa-tachometer-alt"></i>
+              <span class="dashboard_menu_item_space"> Dashboard </span>
+            </li>
+            <li class="dashboard__menu-item">
+              <i class="fas fa-cogs"></i>
+              <span class="dashboard_menu_item_space"> Product </span>
+            </li>
+            <li class="dashboard__menu-item">
+              <i class="fas fa-users"></i>
+              <span class="dashboard_menu_item_space"> Customers</span>
+            </li>
+            <li class="dashboard__menu-item">
+              <i class="fas fa-dollar-sign"></i>
+              <span class="dashboard_menu_item_space"> Income</span>
+            </li>
+            <li class="dashboard__menu-item">
+              <i class="fas fa-bullhorn"></i>
+              <span class="dashboard_menu_item_space"> Promote</span>
+            </li>
+            <li class="dashboard__menu-item">
+              <i class="fas fa-question-circle"></i>
+              <span class="dashboard_menu_item_space"> Help</span>
+            </li>
+          </ul>
+        </nav>
+        <footer class="dashboard__footer">
+          <div class="user">
+            <img class="user__avatar" src="avatar.png" alt="Evano" />
+            <p class="user__info">Evano<br /><span>Project Manager</span></p>
+          </div>
+        </footer>
+      </aside>
+      <main class="dashboard__content">
+        <header class="dashboard__header">
+          <h1 class="dashboard__title">Hello Evano 👋,</h1>
+        </header>
+        <section class="customers">
+          <div class="customers__header">
+            <h2 class="customers__title">
+              All Customers <br />
+
+              <span class="customers__subtitle">Active Members</span>
+            </h2>
+
+            <input class="customers__search" type="text" placeholder="Search" />
+          </div>
+          <table class="customers__table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td>
+                  <button class="status status--active">Active</button>
+                </td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>Google</td>
+                <td>(123) 456-7890</td>
+                <td>john@google.com</td>
+                <td>Canada</td>
+                <td class="status status--inactive">Inactive</td>
+              </tr>
+              <tr>
+                <td>Sarah Smith</td>
+                <td>Amazon</td>
+                <td>(987) 654-3210</td>
+                <td>sarah@amazon.com</td>
+                <td>United Kingdom</td>
+                <td class="status status--active">Active</td>
+              </tr>
+              <tr>
+                <td>Michael Brown</td>
+                <td>Facebook</td>
+                <td>(456) 789-1230</td>
+                <td>michael@facebook.com</td>
+                <td>Australia</td>
+                <td class="status status--inactive">Inactive</td>
+              </tr>
+              <tr>
+                <td>Emily Davis</td>
+                <td>Apple</td>
+                <td>(321) 654-9870</td>
+                <td>emily@apple.com</td>
+                <td>Germany</td>
+                <td class="status status--active">Active</td>
+              </tr>
+            </tbody>
+          </table>
+          <footer class="customers__footer">
+            <p>Showing data 1 to 8 of 256K entries</p>
+            <div class="pagination">
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+            </div>
+          </footer>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
