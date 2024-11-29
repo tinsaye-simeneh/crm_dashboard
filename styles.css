@@ -49,7 +49,8 @@ body {
   border-radius: 8px;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .dashboard__menu-item--active {
@@ -58,7 +59,7 @@ body {
 }
 
 .dashboard_menu_item_space {
-  margin-left: 1rem;
+  margin-left: -3rem;
 }
 
 .dashboard__footer {
@@ -177,6 +178,7 @@ body {
   color: #ffff;
   border: none;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 .status--inactive {
@@ -184,6 +186,7 @@ body {
   color: #fff;
   border: none;
   padding: 10px;
+  cursor: pointer;
 }
 
 .customers__footer {
